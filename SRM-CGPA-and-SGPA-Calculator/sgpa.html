@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="description" content="srm university gpa calculator">
+    <meta name="keywords" content="srm, university, gpa, calculator">
+    <meta charset="utf-8">
+    <title>Yugendran-Site</title>
+    <link rel="icon" href="favicon.ico">
+    <meta name="theme-color" content="#ff00ff">
+    <meta name="msapplication-navbutton-color" content="#ff00ff">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/sgpacss.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <h1 class="style">SRM IST<small class="text-muted"> CGPA Calculator</small></h1>
+        <div class="hidden" id="result">
+            <h2 id="result" class="text-center style" style="color:black">You have scored a CGPA of <strong><span id="gpa"></span></strong></h2>
+            <div class="progress">
+                <div class="bar">
+                    <p class="percent"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <form class="form-inline" action="#">
+                <input type="reset" id="reset" class="hidden btn btn-danger btn-lg btn-block">
+                <table class="table">
+                    <tr>
+                        <th>S.no</th>
+                        <th>SGPA</th>
+                    </tr>
+                    <tr>
+                        <td><label for="cr1">1.</label></td>
+                        <td><input type="number" class="cred form-control" id="cr1" min=1></td>
+                    </tr>
+                    <tr>
+                        <td><label for="cr2">2.</label></td>
+                        <td><input type="number" class="cred form-control" id="cr2" min=1></td>
+                    </tr>
+                </table>
+            </form>
+            <button class="submitbutton" id="more">Add SGPA</button>
+            <br>
+            <input type="button" value="Submit" id="go">
+        </div>
+
+        <div class="sgpahyper">
+            <a href="index.html">
+                <h2>Want to calculate your GPA?</h2>
+            </a>
+        </div>
+
+        <!-- Copyright Section -->
+        <div class="copyright">
+            <p>© <span id="year"></span> Yugendran Shankar. All rights reserved.</p>
+            <script>
+                document.getElementById('year').textContent = new Date().getFullYear();
+            </script>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/sgpajs.js"></script>
+</body>
+</html>

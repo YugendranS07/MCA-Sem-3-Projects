@@ -1,0 +1,244 @@
+.hidden {
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom right, rgba(79, 51, 176, 1.0), rgba(210, 53, 165));
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Ensure body takes full height */
+}
+
+/* .bge{
+    background-image: url(s.png);
+  
+    margin: 0;
+    display: block; 
+    height: 1000%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+.container-fluid {
+    background: inherit;
+    width: 45%;
+    color: white;
+    position: relative;
+    align-items: center;
+    height: 90vh;
+    /* Adjust height as needed */
+    text-align: center;
+    margin: 30px auto;
+    border: 3px solid black;
+    box-shadow: 0 20px 80px 0 rgba(0, 0, 0, 0.2), 0 20px 30px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+    background: linear-gradient(to bottom right, rgba(79, 51, 176, 1.0), rgba(210, 53, 165));
+}
+
+.style {
+    font-family: 'Raleway', sans-serif;
+}
+
+.container-fluid h1 {
+    color: whitesmoke;
+    margin: 2% 17%;
+}
+
+.container-fluid h2 {
+    color: white;
+}
+
+#fb {
+    float: right;
+}
+
+.container-fluid form table {
+    display: block;
+    width: 50%;
+    margin: 5% 11.5%;
+    font-family: 'Roboto', sans-serif;
+    align-items: center;
+    border-collapse: collapse;
+    letter-spacing: 3px;
+}
+
+td {
+    padding: 10px 2.5em;
+}
+
+#go {
+    width: 35%;
+    margin: 0;
+    height: 40px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 0 auto;
+    background-color: green;
+    cursor: pointer;
+    opacity: 0.9;
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+#more {
+    margin: 0 300px 10px 0;
+    padding: 15px 15px;
+
+    cursor: pointer;
+    border-radius: 50px;
+    left: 20px;
+    text-align: center;
+    opacity: 0.9;
+
+}
+
+#more:hover {
+    opacity: 12;
+}
+
+.text-muted {
+    color: black;
+    text-decoration: underline;
+}
+
+.submitbutton {
+    background-color: blue;
+    color: white;
+
+}
+#reset {
+    text-align: center;
+    margin-top: 20px;
+    width: 25%;
+    background-color: red;
+    color: whitesmoke;
+    border-radius: 20px;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer
+}
+#gpa {
+    color: green;
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#result {
+    margin-top: 30vh;
+}
+.container-fluid hr {
+    margin-right: 20%;
+    border-color: violet;
+}
+.like {
+    margin-right: 20%;
+}
+.btn-buttoni {
+    width: 40%;
+    display: block;
+}
+
+input {
+    height: 30px;
+    border: 2px solid black;
+
+}
+
+
+@media(max-width: 700px) {
+    .container-fluid {
+        width: 90%;
+
+    }
+
+    .container-fluid form table {
+        width: 100%;
+    }
+
+    input {
+        width: 80%;
+    }
+
+    .container-fluid h1 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    #more {
+        margin-left: 10px;
+        width: 30%;
+    }
+
+}
+
+.progress {
+    margin: 20px auto;
+    padding: 0;
+    width: 90%;
+    height: 30px;
+    overflow: hidden;
+    background: #e5e5e5;
+    border-radius: 6px;
+    border: 2px solid black;
+}
+
+.bar {
+    position: relative;
+    float: left;
+    min-width: 1%;
+    height: 100%;
+    background: cornflowerblue;
+
+}
+
+.percent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-family: tahoma, arial, helvetica;
+    font-size: 12px;
+    color: white;
+}
+
+.sgpahyper h2 {
+    margin-top: 20px;
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+    opacity: 0.8;
+    font-size: 19px;
+}
+
+.sgpahyper h2:hover {
+    opacity: 1;
+}
+
+.bottom-container {
+    float: right;
+    font-size: 10px;
+}
+
+.copyright {
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    /* Change background color as needed */
+    width: 100%;
+    margin-top: 20px;
+    /* Add margin for spacing */
+}
